@@ -3,7 +3,10 @@
   padding: 0 15px;
 }
 
-.multiselct .select2-container {
+.multiselct .select2-container,
+.singlselect .select2-container {
+  width: 100% !important;
+} {
   width: 100% !important;
 }
 .singlselect .select2-container .select2-selection--single {
