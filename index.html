@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>IndiaBiz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- my styles -->
+  <link rel="stylesheet" href="assests/css/style.css">
+  <link rel="stylesheet" href="assests/css/responsive.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- multi select -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+  
+</head>
+<body>
+
+<div>
+  
+<div class="container main-sec">
+  <div class="heading text-center mb-5 mt-3">
+    <h1><span>Resume</span></h1>
+  </div>
+
+  <div class="main-sec">
+    <form class="needs-validation" novalidate>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="validationCustom01">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" placeholder="Enter First name" value="Swati"
+            required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationCustom02">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Last name" value="Soni"
+            required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationCustom03">Email Address</label>
+          <input type="email" class="form-control" id="validationCustom03" placeholder="Enter Email address" value=""
+            required>
+            <div class="invalid-feedback">
+              Please enter valid email address.
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationCustom04">Mobile Number</label>
+          <input type="number" class="form-control" id="validationCustom04" placeholder="Enter Mobile Number" max="15" value=""
+            required>
+            <div class="invalid-feedback">
+              Please enter valid mobile number.
+            </div>
+        </div>
+        <div class="col-md-4 mb-3 singlselect">
+          <label for="sel1">State</label>
+          <select class="js-example-placeholder-single js-states form-control" id="sel1" required>
+            <option></option>
+            <option>Andra Pradesh</option>
+            <option>Arunachal Pradesh</option>
+            <option>Gujarat</option>
+            <option>Haryana</option>
+            <option>Madya Pradesh</option>
+            <option>Maharashtra</option>
+            <option>Punjab</option>
+          </select>
+          <div class="invalid-feedback">
+            Please provide a valid state.
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 singlselect">
+          <label for="selcity">City</label>
+          <select class="single-selectcity form-control" id="selcity" required>
+            <option></option>
+            <option>Mumbai</option>
+            <option>Delhi</option>
+            <option>Bangalore</option>
+            <option>Ahmedabad</option>
+            <option>Chennai</option>
+            <option>Pune</option>
+            <option>Lucknow</option>
+          </select>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label>Gender</label>
+          <div class="">
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optradio" checked>Male
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optradio">Female
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 mb-3">
+          <label>Hobbies, Interests</label>
+          <div class="">
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="" checked>Singing
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">Dancing
+              </label>
+            </div><div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">Playing
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">Writting
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">Photography
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">Gardening
+              </label>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-6 mb-3 multiselct">
+          <label>Education</label>
+          <select class="js-example-placeholder-multiple js-states form-control" name="degree" multiple="multiple" required>
+            <option>Select Education</option>
+            <option>B.Tech</option>
+            <option>MBA</option>
+            <option>M Tech</option>
+            <option>BHMS</option>
+            <option>BDS</option>
+            <option>MCA</option>
+            <option>BCA</option>  
+          </select>
+          <div class="invalid-feedback">
+            Please provide education.
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="validation06">Profile Image</label>
+          <div class="upload-btn-wrapper" id="validation06">
+            <button class="btn">Upload a file</button>
+            <input type="file" name="myfile" id="validation06" required />
+          </div>
+          
+            <div class="invalid-feedback">
+              Please enter valid mobile number.
+            </div>
+          
+        </div> 
+      </div>
+      <div class="row">
+        <div class="col-md-12 mb-3">
+          <label for="bio">Career Objective / Bio:</label>
+          <textarea class="form-control" rows="5" id="bio" required></textarea>
+          <div class="invalid-feedback">
+            Please provide career objective.
+          </div>
+        </div>
+      </div>  
+      <div class="row">
+        <div class="col-md-12">
+          <button class="btn btn-primary btn-sm" type="submit">Submit form</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+</div>
+
+<script>
+  // validation 
+  (function() {
+  'use strict';
+  window.addEventListener('load', function() {
+  var forms = document.getElementsByClassName('needs-validation');
+  var validation = Array.prototype.filter.call(forms, function(form) {
+  form.addEventListener('submit', function(event) {
+  if (form.checkValidity() === false) {
+  event.preventDefault();
+  event.stopPropagation();
+  }
+  form.classList.add('was-validated');
+  }, false);
+  });
+  }, false);
+  })();
+  // multi select
+  $(document).ready(function() {
+    $('.js-example-placeholder-multiple .js-states').select2();
+    $(".js-example-placeholder-multiple").select2({
+    placeholder: "Select Education"
+    });
+    $(".js-example-placeholder-single").select2({
+    placeholder: "Select a state",
+    allowClear: false
+    });
+    $(".single-selectcity").select2({
+    placeholder: "Select a city",
+    allowClear: false
+    });
+  });
+</script>
+
+</body>
+</html>
+
+
